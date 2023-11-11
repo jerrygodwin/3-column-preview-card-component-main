@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+/* font-family: 'Lexend Deca', sans-serif; */
+/* font-family: 'Big Shoulders Display', sans-serif; */
+
+* {
+  padding: 0px;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: hsl(0, 0%, 95%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 900px;
+  height: 480px;
+  display: flex;
+  flex-direction: row;
+  border-radius: 3%;
+}
+
+.inner-card {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 50px;
+  padding-top: 50px;
+  padding-right: 40px;
+}
+
+#card-one {
+  background-color: hsl(31, 77%, 52%);
+  border-top-left-radius: 3%;
+  border-bottom-left-radius: 3%;
+}
+
+#card-two {
+  background-color: hsl(184, 100%, 22%);
+}
+
+#card-three {
+  background-color: hsl(179, 100%, 13%);
+  border-top-right-radius: 3%;
+  border-bottom-right-radius: 3%;
+}
+
+.type {
+  color: hsl(0, 0%, 95%);
+  font-size: 30px;
+  font-family: "Big Shoulders Display", sans-serif;
+  text-transform: uppercase;
+  margin-top: 30px;
+}
+
+.paragraph {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-family: "Lexend Deca", sans-serif;
+  margin-top: 30px;
+  margin-bottom: 90px;
+  font-size: 15px;
+}
+
+.button {
+  width: 150px;
+  height: 50px;
+  border-radius: 30px;
+  font-family: "Lexend Deca", sans-serif;
+  cursor: pointer;
+  /* color: transparent; */
+  outline: none;
+  border: none;
+}
+
+button:hover {
+  background-color: transparent;
+  border: 1px solid #000;
+  color: white;
+}
+
+#orange {
+  color: hsl(31, 77%, 52%);
+}
+
+#light-green {
+  color: hsl(184, 100%, 22%);
+}
+
+#green {
+  color: hsl(179, 100%, 13%);
+}
+
+#orange:hover, #light-green:hover, #green:hover {
+  color: white;
+}
+
+.images {
+  width: 55px;
+}
+
+
+@media screen and (max-width: 480px) {
+  body {
+height: 100%;
+overflow: auto;
+  }
+
+  .card {
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin: 60px 16px;
+  }
+
+  #card-one {
+    border-bottom-left-radius: 0%;
+    border-top-right-radius: 3%;
+  }
+
+  #card-three {
+    border-top-right-radius: 0%;
+    border-bottom-left-radius: 3%;
+  }
+
+  .paragraph {
+    margin-bottom: 25px;
+    font-size: 11px;
+  }
+
+  .button {
+    margin-bottom: 40px;
+  }
+
+  .inner-card {
+    width: 100%;
+    height: 400px;
+    justify-content: space-between;
+  }
+}
